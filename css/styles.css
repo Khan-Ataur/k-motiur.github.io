@@ -73,11 +73,59 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #bd5d38;
+  --bs-link-color: #463f3c;
   --bs-link-hover-color: #974a2d;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
+
+
+
+/* Make sidebar full height and allow scrolling */
+#sideNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1030; /* Bootstrap default navbar z-index */
+}
+
+#sideNav .navbar-collapse {
+    overflow-y: auto;
+    height: calc(100vh - 120px); /* Adjust depending on your header/profile area */
+    padding-bottom: 1rem;
+}
+
+/* Ensure profile area doesn't take up entire height */
+#sideNav .navbar-brand {
+    margin-top: 1rem;
+}
+
+/* On small screens, collapse into top nav with scroll */
+@media (max-width: 991.98px) {
+    #sideNav {
+        position: static;
+        height: auto;
+        overflow: visible;
+    }
+
+    #sideNav .navbar-collapse {
+        height: auto;
+        overflow: visible;
+    }
+}
+
+.img-profile {
+    max-width: 120px;
+}
+@media (min-width: 992px) {
+    body {
+        padding-left: 220px; /* Adjust based on navbar width */
+    }
+}
+
+
 
 *,
 *::before,
@@ -90,6 +138,10 @@
     scroll-behavior: smooth;
   }
 }
+
+
+
+
 
 body {
   margin: 0;
@@ -3625,7 +3677,7 @@ textarea.form-control-lg {
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
-  color: var(--bs-nav-link-color);
+  color:black;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -8128,7 +8180,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: lightgrey !important;
 }
 
 .bg-secondary {
@@ -10927,8 +10979,8 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
-  color: #fff;
+  background-color: #0dcaf0;
+  color: #ffff;
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
