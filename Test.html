@@ -1,3 +1,42 @@
-<!-- Test.html -->
-<h2>This is loaded dynamically</h2>
-<p>Hello from Test.html</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PDF.js Test</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.9.179/pdf.min.js"></script>
+  <style>
+    #pdf-render {
+      border: 1px solid #ccc;
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h2>PDF Preview</h2>
+  <canvas id="pdf-render"></canvas>
+
+  <script>
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.9.179/pdf.worker.min.js';
+
+    const url = 'CV_of_Motiur.pdf'; // PDF file must be in the same folder as this test.html
+
+    const canvas = document.getElementById('pdf-render');
+    const ctx = canvas.getContext('2d');
+
+    pdfjsLib.getDocument(url).promise.then(pdfDoc => {
+      pdfDoc.getPage(1).then(page => {
+        const viewport = page.getViewport({ scale: 1.5 });
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        page.render({ canvasContext: ctx, viewport: viewport });
+      });
+    }).catch(err => {
+      console.error('PDF loading error:', err);
+    });
+  </script>
+</body>
+</html>
+

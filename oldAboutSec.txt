@@ -1,0 +1,65 @@
+<section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h2 class="mb-0">
+                    MD. MOTIUR RAHMAN
+                </h2>
+                <div class="subheading mb-5">
+                    West Lafayette, Indiana, United States·
+                    <a href="mailto:rahma112@purdue.edu">rahma112@purdue.edu</a>
+                </div>
+
+                <p class="lead mb-5">
+                <p style="text-align: justify;">I am pursuing my Ph.D. in Engineering Technology at <span
+                        style="color: #3366ff;"><a style="color: #3366ff;" href="https://purdue.edu/"
+                            target="_blank">Purdue University</a></span>, mainly focusing on Machine Learning (ML) in
+                    Healthcare Technology. I received my B.Sc. in Computer Science and Engineering from Patuakhali
+                    Science and Technology University, Bangladesh, in 2016 and my M.Sc. in Computer Science and
+                    Engineering from Dhaka University of Engineering Technology, Bangladesh, 2019. I have also been
+                    serving as an assistant professor at the Chattogram Veterinary and Animal Sciences University,
+                    Chattogram, Bangladesh. My research interests include Computer Vision (CV), ML in healthcare
+                    technology, biomedical informatics, NLP, and data analytics.</p>
+                <p>&nbsp;</p>
+                </p>
+
+
+                <div class="social-icons">
+
+                    <a class="social-icon" href="https://www.linkedin.com/in/mrahman1994" target="_blank">
+                        <img src="assets/socialIcons/icons8-linkedin-50.png" alt="X" style="width: 30px; height: 30px;">
+                    </a>
+
+                    <a class="social-icon" href="https://github.com/Rahman-Motiur" target="_blank">
+                        <img src="assets/socialIcons/icons8-github-50.png" alt="X" style="width: 30px; height: 30px;">
+                    </a>
+
+                    <a class="social-icon" href="https://scholar.google.ca/citations?user=L-yxjAkAAAAJ&hl=en&oi=ao"
+                        target="_blank">
+                        <img src="assets/socialIcons/icons8-google-scholar-50.png" alt="X"
+                            style="width: 30px; height: 30px;">
+                    </a>
+
+                    <a class="social-icon" href="#!" target="_blank">
+                        <img src="assets/socialIcons/icons8-x-50.png" alt="X" style="width: 30px; height: 30px;">
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+        ///////////////////
+
+        <div class="d-flex flex-column flex-md-row align-items-center mb-4">
+                    <img src="assets/img/profile.jpg" alt="MD. MOTIUR RAHMAN"
+                        class="img-fluid rounded-circle mb-3 mb-md-0" style="max-width: 100px; height: auto;">
+
+                    <div class="ms-md-4 text-center text-md-start">
+                        <h2 class="mb-0">MD. MOTIUR RAHMAN</h2>
+                        <div class="subheading mb-3">
+                            West Lafayette, Indiana, United States ·
+                            <a href="mailto:rahma112@purdue.edu">rahma112@purdue.edu</a>
+                        </div>
+                    </div>
+                </div>
+
+///////////////////////////
