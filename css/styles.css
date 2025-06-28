@@ -10937,7 +10937,7 @@ p.lead {
     padding-left: 0;
     padding-right: 0;
     text-align: center;
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     display: flex;
@@ -11021,4 +11021,14 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
 }
