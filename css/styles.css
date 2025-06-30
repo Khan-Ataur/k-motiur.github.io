@@ -11034,3 +11034,31 @@ section.resume-section .resume-section-content {
 }
 
 
+.section-title {
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+.interest-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 10px;
+    margin: 20px 0 40px;
+}
+
+.interest-tag {
+    padding: 6px 14px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #000;
+    max-width: 100%;
+    word-break: break-word;
+    text-align: center;
+}
