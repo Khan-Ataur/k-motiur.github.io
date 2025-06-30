@@ -11034,6 +11034,7 @@ section.resume-section .resume-section-content {
 }
 
 
+/*Research interests */
 .section-title {
     font-size: 18px;
     border-bottom: 1px solid #ccc;
@@ -11061,4 +11062,19 @@ section.resume-section .resume-section-content {
     max-width: 100%;
     word-break: break-word;
     text-align: center;
+}
+
+/*Selected publications */
+ol {
+    padding-left: 20px;
+    font-size: 17px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    color: #000;
+    word-break: break-word;
+}
+
+ol a {
+    color: #0645ad;
+    text-decoration: none;
 }

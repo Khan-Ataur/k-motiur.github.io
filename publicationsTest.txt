@@ -1,26 +1,4 @@
-<!-- Research Interests -->
-                <h3
-                    style="font-size: 22px; border-bottom: 1px solid #ccc; padding-bottom: 8px; margin-top: 40px; color: #111111;">
-                    Research Interests
-                </h3>
 
-                <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; margin-bottom: 40px;">
-                    <span style="padding: 6px 14px; border: 1px solid #000; border-radius: 20px; font-size: 16px;">
-                        Computer Vision
-                    </span>
-                    <span style="padding: 6px 14px; border: 1px solid #000; border-radius: 20px; font-size: 16px;">
-                        Medical Image Segmentation
-                    </span>
-                    <span style="padding: 6px 14px; border: 1px solid #000; border-radius: 20px; font-size: 16px;">
-                        Generative AI
-                    </span>
-                    <span style="padding: 6px 14px; border: 1px solid #000; border-radius: 20px; font-size: 16px;">
-                        Personalized AI
-                    </span>
-                    <span style="padding: 6px 14px; border: 1px solid #000; border-radius: 20px; font-size: 16px;">
-                        AI in Healthcare
-                    </span>
-                </div>
 
 
                 <!-- Selected Publications -->
@@ -80,8 +58,7 @@
                             style="color: #0645ad; text-decoration: none;">Computational and experimental studies to
                             optimize the extraction of flavonoids from mango powder using
                             response surface methodology</a>. Food Measure 15, 3671–3682 (2021).
-                        https://doi.org/10.1007/s11694-021-00945-3 [
-                        </span>
+                        https://doi.org/10.1007/s11694-021-00945-3 [                       
                         <span style="font-size: 1.125rem; background-color: #ffffff; font-weight: 700;">IF-2.431</span>
                         <span style="font-size: 1.125rem; background-color: #ffffff; color: #111111;">]</span>
                     </li>
@@ -146,4 +123,4 @@
                 </ol>
 
 
-            </div>
+           
