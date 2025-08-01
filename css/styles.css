@@ -12891,7 +12891,7 @@ ol a {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  font-size: 16px;
+  font-size: 14px;
   align-items: center;
 }
 
@@ -12899,8 +12899,8 @@ ol a {
   display: inline-flex;
   align-items: center;
   color: #0645ad;
-  background-color: transparent;
-  padding: 4px 8px;
+  background-color: antiquewhite;
+  padding: 2px 4px;
   border-radius: 6px;
   transition: background-color 0.2s;
 }
