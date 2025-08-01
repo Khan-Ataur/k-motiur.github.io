@@ -1,0 +1,173 @@
+<section class="resume-section" id="research_Projects"
+            style="text-align: justify; color: black;font-family: 'Arial'">
+            <div class="resume-section-content">
+                <h2 class="mb-2">Research & Projects</h2>
+
+                <!-- Project 1 -->
+                <div class="project-container">
+                    <div class="carousel" data-project="1">
+                        <img src="assets/ProjectPics/project1/img1.png" class="slide active" />
+                        <img src="assets/ProjectPics/project1/img2.png" class="slide" />
+                        <img src="assets/ProjectPics/project1/img3.jpg" class="slide" />
+                        <div class="carousel-controls">
+                            <button onclick="prevSlide(1)">&#8592;</button>
+                            <button onclick="nextSlide(1)">&#8594;</button>
+                        </div>
+                    </div>
+
+                    <div class="project-details">
+                        <h3><u>Medical Image Segmentation Transformer with CAM Decoder</u></h3>
+                        <p class="summary">
+                            Summary: One of the familiar and promising deep learning approaches used for medical image
+                            segmentation is transformers,...
+                        </p>
+                        <details>
+                            <summary>Read more</summary>
+                            <p>
+                                as they can capture long-range dependencies among the pixels by utilizing self-attention. Despite being successful in medical image segmentation, transformers need help in capturing local contexts of pixels in multimodal dimensions. Hence, we are developing lightweight transformers with memory-enabled decoders and attention-mixing decoders for precise medical image segmentation. 
+                            </p>
+                        </details>
+                    </div>
+                </div>
+                
+                <hr>
+
+                <!-- Project 2 -->
+                <div class="project-container">
+                    <div class="carousel" data-project="2">
+                        <img src="assets/ProjectPics/project2/img3.jpg" class="slide active" />
+                        <img src="assets/ProjectPics/project2/img4.png" class="slide" />
+                        <div class="carousel-controls">
+                            <button onclick="prevSlide(2)">&#8592;</button>
+                            <button onclick="nextSlide(2)">&#8594;</button>
+                        </div>
+                    </div>
+
+                    <div class="project-details">
+                        <h3><u>Attentional Homogeneous-Padded Composite Model for Respiratory Anomalies Prediction</u></h3>
+                        <p class="summary">
+                            Summary: Early diagnosis, treatment, and regular monitoring can limit respiratory disease spread and adverse effects. However, more trained physicians are needed to ensure early diagnosis and treatment.
+                        </p>
+                        <details>
+                            <summary>Read more</summary>
+                            <p>
+                                This can be overcome by automating auscultation to identify anomalies like crackles, wheezes, and both. In this work, we propose a hybrid deep learning model combining ResNet34, a CNN model, a feature extractor, and Long Sort-term Memory (LSTM) as a predictor. We have also added an attention layer in the feature extractor to make the model learn the critical regions of the feature vector. Our model outperforms the recent state-of-the-art models and improves the performance of 2-class- and 4-class anomaly predictions.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+        ///
+
+
+        /*Research and Project*/
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 350px; /* Fixed height */
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+}
+
+.carousel-controls {
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.carousel-controls button {
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.project-details h3 {
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+
+.project-details .summary {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  .project-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .carousel {
+    flex: 1;
+  }
+  .project-details {
+    flex: 1;
+    padding-left: 20px;
+  }
+}
+
+
+/*Research and Project End*/
+
+
+
+ <script>
+        const carousels = {};
+
+        function showSlide(projectId, index) {
+            const carousel = document.querySelector(`.carousel[data-project="${projectId}"]`);
+            const slides = carousel.querySelectorAll('.slide');
+            if (!carousels[projectId]) carousels[projectId] = 0;
+
+            carousels[projectId] = (index + slides.length) % slides.length;
+
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === carousels[projectId]);
+            });
+        }
+
+        function nextSlide(projectId) {
+            showSlide(projectId, carousels[projectId] + 1);
+        }
+
+        function prevSlide(projectId) {
+            showSlide(projectId, carousels[projectId] - 1);
+        }
+
+        // Initialize all carousels
+        document.querySelectorAll('.carousel').forEach((carousel, index) => {
+            carousels[index + 1] = 0;
+        });
+    </script>

@@ -12815,7 +12815,8 @@ section.resume-section .resume-section-content {
 
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh;
+   /* min-height: 100vh; */
+   min-height: 50vh;
   }
 }
 
@@ -12921,3 +12922,87 @@ ol a {
 }
 
 /*Selected publications end */
+
+/*Research and Project*/
+
+    .carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: 300px; /* Fixed height */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .carousel img.active {
+    opacity: 1;
+    position: relative;
+  }
+
+  .carousel-controls {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+
+  .carousel-controls button {
+    background: rgba(255,255,255,0.8);
+    border: none;
+    margin: 0 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .project-details {
+    font-size: 0.95rem;
+  }
+
+  .publication-links {
+    font-size: 0.85rem;
+    margin-top: 8px;
+  }
+
+  .publication-links i {
+    margin-right: 5px;
+  }
+
+  @media (min-width: 768px) {
+    .project-container {
+      flex-direction: row;
+      gap: 2rem;
+    }
+
+    .carousel {
+      flex: 1;
+    }
+
+    .project-details {
+      flex: 2;
+    }
+  }
+
+
+
+/*Research and Project End*/
