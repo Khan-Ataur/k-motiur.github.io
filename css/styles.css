@@ -12810,7 +12810,7 @@ section.resume-section {
 }
 
 section.resume-section .resume-section-content {
-  width: 100%;
+  width: 100%; 
 }
 
 @media (min-width: 768px) {
@@ -13003,6 +13003,28 @@ ol a {
     }
   }
 
-
-
 /*Research and Project End*/
+
+
+/*Mentoring and Teaching*/
+
+.teaching-experience ul {
+    list-style-type: disc;
+    margin-top: 10px;
+  }
+
+  .teaching-experience li {
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 768px) {
+    .teaching-experience ul {
+      padding-left: 15px;
+    }
+
+    .teaching-experience li {
+      font-size: 0.95rem;
+    }
+  }
+
+  /*Mentoring and Teaching End*/
